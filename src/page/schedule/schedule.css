@@ -1,0 +1,6 @@
+.schedule_container {
+  padding: 24px 48px;
+  display: grid;
+  grid-template-columns: 24% 74%;
+  grid-gap: 24px;
+}

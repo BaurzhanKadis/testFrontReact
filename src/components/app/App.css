@@ -1,0 +1,16 @@
+:root {
+  --mainBlue: #4F7FFF;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainGrey60: #697077;
+  --mainGrey20: #DDE1E6;
+  --mainRed: #DA1E28;
+}
+
+.wrapper {
+  font-family: 'Inter', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F2F4F8;
+  box-sizing: border-box;
+}
