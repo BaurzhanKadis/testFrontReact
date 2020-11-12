@@ -1,92 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import "./items-lessons.css";
 
-const itemLessons = [
-  {
-    date: "пн, 12 октября",
-    time: "9:00-10:00",
-    title: "Hobbies",
-    count: "Начнется через 8:32:47",
-    hw: false,
-  },
-  {
-    date: "чт, 15 октября",
-    time: "9:00-10:00",
-    title: "Time",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "чт, 15 октября",
-    time: "9:00-10:00",
-    title: "Sleep",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "пт, 16 октября",
-    time: "9:00-10:00",
-    title: "Music",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "сб, 17 октября",
-    time: "9:00-10:00",
-    title: "First Dates",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "вс, 18 октября",
-    time: "9:00-10:00",
-    title: "Work",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "пн, 19 октября",
-    time: "9:00-10:00",
-    title: "Risk",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "вт, 20 октября",
-    time: "9:00-10:00",
-    title: "Food",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "ср, 21 октября",
-    time: "9:00-10:00",
-    title: "Work",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "чт, 22 октября",
-    time: "9:00-10:00",
-    title: "Risk",
-    count: "",
-    hw: true,
-  },
-  {
-    date: "пт, 23 октября",
-    time: "9:00-10:00",
-    title: "Food",
-    count: "",
-    hw: true,
-  },
-];
-const ItemsLessons = () => {
+const ItemsLessons = ({ itemLessons, hendleItemLesson, active }) => {
+  console.log(itemLessons)
   return (
     <div className="items-lessons_container">
-      {itemLessons.map((item, id) => {
+      {itemLessons.map((item) => {
         return (
-          <div key={id} className="item-lesson">
+          <div key={item.id} className={`item-lesson ${item.active ? "item-lesson-active":"ttt"}`} onClick={()=>hendleItemLesson(item.id)}>
             <span className="item-lesson_date-time">
               <span className="date">{item.date}</span>
               <span className="time">{item.time}</span>
@@ -111,6 +33,7 @@ const ItemsLessons = () => {
           </div>
         );
       })}
+      <div className={active ? "modalGrey":""}></div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .item-lesson {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 32%;
+  grid-template-columns: 1fr 1fr 25% 34%;
   align-items: center;
   box-shadow: 0px 2px 2px 0px rgba(105, 112, 119, 0.12);
   background-color: var(--mainWhite);
@@ -12,6 +12,12 @@
   -o-border-radius: 8px;
   margin-bottom: 9px;
   cursor: pointer;
+}
+.item-lesson-active {
+  box-shadow: 0px 19px 38px 0px rgba(105, 112, 119, 0.16);
+  z-index: 2;
+  position: sticky;
+  /* width: 65%; */
 }
 .item-lesson_date-time {
   display: flex;
@@ -46,4 +52,12 @@
   background: rgba(218, 30, 40, 0.1);
   border-radius: 6px;
   padding: 10px 17px;
+}
+.modalGrey {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
