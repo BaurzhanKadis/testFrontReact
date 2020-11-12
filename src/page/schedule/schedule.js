@@ -154,13 +154,12 @@ class Schedule extends React.Component {
   }
 
   render() {
-    // console.log(this.state.itemLessons)
-    // console.log(this.state.active)
+    const doneCount = this.state.homeWork.filter((el) => el.active).length;
     return (
       <div className="schedule_container">
         <Info />
         <ItemsLessons active={this.state.active} itemLessons={this.state.itemLessons} hendleItemLesson={this.hendleItemLesson}/>
-        <Modal homeWork={this.state.homeWork} hendleHomeWork={this.hendleHomeWork} active={this.state.active}/>
+        <Modal doneCount={doneCount} homeWork={this.state.homeWork} hendleHomeWork={this.hendleHomeWork} active={this.state.active}/>
       </div>
     );
   }

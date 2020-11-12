@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './modal.css';
-import img1 from '../../assets/img/111.jpg';
+import img1 from '../../assets/img/111.png';
 import img2 from '../../assets/img/222.jpg';
 import img3 from '../../assets/img/333.jpg';
 
-const Modal = ({ active, homeWork, hendleHomeWork }) => {
+const Modal = ({ active, homeWork, hendleHomeWork, doneCount }) => {
   return (
     <div className={`modal-container ${active ? "modal-container-active" : ""}`}>
       <div className="modal_top">
@@ -34,7 +34,7 @@ const Modal = ({ active, homeWork, hendleHomeWork }) => {
       </div>
       <div className="modal_homework">
         <h4>Домашнее задание</h4>
-        <span>Выполнено 1/4</span>
+        <span>Выполнено {doneCount}/4</span>
         {homeWork.map((item) => {
           return <div key={item.id} className="homework_item" onClick={()=>hendleHomeWork(item.id)}>
             <span className={`icon ${item.active ? "icon-active" : ""}`}>

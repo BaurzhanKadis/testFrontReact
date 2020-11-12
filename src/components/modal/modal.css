@@ -6,9 +6,9 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  width: 26%;
+  width: 350px;
   height: 100%;
-  left: -26%;
+  left: -350px;
   background-color: var(--mainWhite);
   padding: 24px;
   box-sizing: border-box;
@@ -64,8 +64,8 @@
   justify-content: space-between;
 }
 .images img {
-  width: 97px;
-  height: 97px;
+  width: 30%;
+  /* height: 97px; */
 }
 .modal_homework h4 {
   margin-bottom: 0;
