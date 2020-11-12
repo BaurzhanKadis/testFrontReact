@@ -1,0 +1,69 @@
+.progress-bar-container {
+  position: relative;
+  text-align: center;
+  padding-top: 24px;
+}
+.progress_bar {
+  position: relative;
+  /* top: 3px;
+  right: 4px;
+  width: 165px;
+  height: 165px;
+  background: rgba(103, 101, 101, 0.5);
+  border-radius: 50%;
+  display: inline-block; */
+}
+.procent {
+  position: absolute;
+  top: 60px;
+  left: 102px;
+  color: var(--mainBlack);
+  display: flex;
+  flex-direction: column;
+}
+.procent-title {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--mainGrey60);
+}
+.procent-num {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--mainBlack);
+}
+.procent-num i {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+}
+.progress_bar svg {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  top: 7px;
+  left: 7px;
+  overflow: initial!important;
+}
+.circle, .circle2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--mainGrey20);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.circle2 {
+  transform-origin: center;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+.circle2 {
+  stroke: var(--mainBlue)!important;
+  box-shadow: 0px 2px 8px 0px rgba(79, 127, 255, 0.24);
+/* 
+  filter: drop-shadow(0px 2px 8px rgba(79, 127, 255, 0.24)); */
+}

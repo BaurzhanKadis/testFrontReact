@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ProgressBar from '../progress-bar';
+
 import './info.css';
 import foto from '../../assets/img/tina.jpg';
 
@@ -24,6 +26,7 @@ const Info = () => {
             <span className="right">{item.typeRight}</span>
           </div>
         })}
+        <ProgressBar />
       </div>
       <div className="info_container-buttom">
         <h2>Преподователь</h2>
