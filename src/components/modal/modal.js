@@ -37,7 +37,7 @@ const Modal = ({ active, homeWork, hendleHomeWork, doneCount }) => {
         <span>Выполнено {doneCount}/4</span>
         {homeWork.map((item) => {
           return <div key={item.id} className="homework_item" onClick={()=>hendleHomeWork(item.id)}>
-            <span className={`icon ${item.active ? "icon-active" : ""}`}>
+            <span className={`icon-hw ${item.active ? "icon-active" : ""}`}>
               <span></span>
             </span>
             <span>{item.title}</span>

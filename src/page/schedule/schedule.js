@@ -108,6 +108,69 @@ class Schedule extends React.Component {
         hw: true,
         active: false
       },
+      {
+        id: 12,
+        date: "пт, 23 октября",
+        time: "9:00-10:00",
+        title: "Food",
+        count: "",
+        hw: true,
+        active: false
+      },
+      {
+        id: 13,
+        date: "пт, 23 октября",
+        time: "9:00-10:00",
+        title: "Food",
+        count: "",
+        hw: true,
+        active: false
+      },
+      {
+        id: 14,
+        date: "пт, 23 октября",
+        time: "9:00-10:00",
+        title: "Food",
+        count: "",
+        hw: true,
+        active: false
+      },
+      {
+        id: 15,
+        date: "пт, 23 октября",
+        time: "9:00-10:00",
+        title: "Food",
+        count: "",
+        hw: true,
+        active: false
+      },
+      {
+        id: 16,
+        date: "пт, 23 октября",
+        time: "9:00-10:00",
+        title: "Food",
+        count: "",
+        hw: true,
+        active: false
+      },
+      {
+        id: 17,
+        date: "пт, 23 октября",
+        time: "9:00-10:00",
+        title: "Food",
+        count: "",
+        hw: true,
+        active: false
+      },
+      {
+        id: 18,
+        date: "пт, 23 октября",
+        time: "9:00-10:00",
+        title: "Food",
+        count: "",
+        hw: true,
+        active: false
+      },
     ],
     active: false,
     homeWork: [

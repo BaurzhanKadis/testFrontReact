@@ -76,7 +76,7 @@
   padding-top: 18px;
   cursor: pointer;
 }
-.icon {
+.icon-hw{
   position: relative;
   width: 20px;
   height: 20px;
@@ -93,7 +93,7 @@
   background-color: var(--mainGreen);
   border: 1px solid var(--mainGreen);
 }
-.icon span {
+.icon-hw span {
   box-sizing: border-box;
   width: 10px;
   height: 5px;
